@@ -20,10 +20,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'x86', 'armeabi-v7a', 'x86_64'
+            universalApk true
+        }
+    }
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
     //kotlin
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     //AndroidX stuff
@@ -31,7 +39,6 @@ dependencies {
     implementation 'androidx.core:core-ktx:1.1.0-alpha04'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.google.android.material:material:1.1.0-alpha03'
-
     //Constraint layout
     implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha3'
     //RecyclerView
@@ -40,10 +47,11 @@ dependencies {
     implementation 'com.google.android.exoplayer:exoplayer-core:2.8.3'
     implementation 'com.google.android.exoplayer:exoplayer-ui:2.8.2'
     implementation 'com.google.android.exoplayer:extension-rtmp:2.8.0'
-    implementation group: 'com.google.android.exoplayer', name: 'extension-ima', version: '2.8.0'
+    implementation 'com.google.android.exoplayer:extension-ima:2.8.0'
     //testing
     implementation 'com.google.android.gms:play-services-maps:16.1.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test:runner:1.1.2-alpha01'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.1.2-alpha01'
+    implementation project(':openCVLibrary')
 }
