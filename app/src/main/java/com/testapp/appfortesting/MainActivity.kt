@@ -1,16 +1,20 @@
 package com.testapp.appfortesting
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.testapp.appfortesting.screens.opencv.OpenCVFragment
-import com.testapp.appfortesting.screens.record.RecordAudioFragment
+import androidx.appcompat.app.AppCompatActivity
+import com.facebook.drawee.backends.pipeline.Fresco
+import com.testapp.appfortesting.screens.exoplayer.streaming.StreamingFragment
+
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        supportFragmentManager.beginTransaction().replace(R.id.mainContent,
-            OpenCVFragment.newInstance()).commit()
+        Fresco.initialize(this)
+        supportFragmentManager.beginTransaction().replace(
+            R.id.mainContent,
+            StreamingFragment.newInstance(StreamingFragment.StreamType.SMOOTH_STREAMING)
+        ).commit()
     }
 }

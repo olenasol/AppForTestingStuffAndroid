@@ -4,4 +4,8 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="contentBackground">#FFF</color>
+    <color name="buffered">	#FFD700</color>
+    <color name="played">#FF7F50</color>
+    <color name="scrubber">#ADFF2F</color>
+    <color name="unplayed">#E0FFFF</color>
 </resources>

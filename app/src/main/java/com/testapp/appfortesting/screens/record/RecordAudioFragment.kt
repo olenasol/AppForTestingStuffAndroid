@@ -11,7 +11,7 @@ import android.view.ViewGroup
 import com.testapp.appfortesting.R
 import android.media.MediaRecorder
 import android.os.Environment
-import kotlinx.android.synthetic.main.fragment_record_video.*
+import kotlinx.android.synthetic.main.fragment_record_audio.*
 
 
 class RecordAudioFragment : Fragment() {
@@ -33,7 +33,7 @@ class RecordAudioFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_record_video, container, false)
+        return inflater.inflate(R.layout.fragment_record_audio, container, false)
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {

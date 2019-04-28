@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'com.apollographql.android'
+
 android {
     compileSdkVersion 28
     defaultConfig {
@@ -43,11 +45,21 @@ dependencies {
     implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha3'
     //RecyclerView
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
+    //Image loading
+    implementation 'com.facebook.fresco:fresco:1.13.0'
     //ExoPlayer
     implementation 'com.google.android.exoplayer:exoplayer-core:2.8.3'
     implementation 'com.google.android.exoplayer:exoplayer-ui:2.8.2'
     implementation 'com.google.android.exoplayer:extension-rtmp:2.8.0'
     implementation 'com.google.android.exoplayer:extension-ima:2.8.0'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.8.0'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.8.0'
+    implementation 'com.google.android.exoplayer:exoplayer-smoothstreaming:2.8.0'
+    //GraphQL
+    implementation 'com.apollographql.apollo:apollo-runtime:0.3.2'
+    implementation "com.apollographql.apollo:apollo-android-support:0.3.2"
+    //Ion
+    implementation 'com.koushikdutta.ion:ion:2.1.6'
     //testing
     implementation 'com.google.android.gms:play-services-maps:16.1.0'
     testImplementation 'junit:junit:4.12'
