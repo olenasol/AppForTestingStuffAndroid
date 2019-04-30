@@ -16,6 +16,11 @@ android {
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
     buildTypes {
         release {
             minifyEnabled false
@@ -48,13 +53,13 @@ dependencies {
     //Image loading
     implementation 'com.facebook.fresco:fresco:1.13.0'
     //ExoPlayer
-    implementation 'com.google.android.exoplayer:exoplayer-core:2.8.3'
-    implementation 'com.google.android.exoplayer:exoplayer-ui:2.8.2'
-    implementation 'com.google.android.exoplayer:extension-rtmp:2.8.0'
-    implementation 'com.google.android.exoplayer:extension-ima:2.8.0'
-    implementation 'com.google.android.exoplayer:exoplayer-hls:2.8.0'
-    implementation 'com.google.android.exoplayer:exoplayer-dash:2.8.0'
-    implementation 'com.google.android.exoplayer:exoplayer-smoothstreaming:2.8.0'
+    implementation 'com.google.android.exoplayer:exoplayer-core:2.9.0'
+    implementation 'com.google.android.exoplayer:exoplayer-ui:2.9.0'
+    implementation 'com.google.android.exoplayer:extension-rtmp:2.9.0'
+    implementation 'com.google.android.exoplayer:extension-ima:2.9.0'
+    implementation 'com.google.android.exoplayer:exoplayer-hls:2.9.0'
+    implementation 'com.google.android.exoplayer:exoplayer-dash:2.9.0'
+    implementation 'com.google.android.exoplayer:exoplayer-smoothstreaming:2.9.0'
     //GraphQL
     implementation 'com.apollographql.apollo:apollo-runtime:0.3.2'
     implementation "com.apollographql.apollo:apollo-android-support:0.3.2"

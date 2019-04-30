@@ -74,12 +74,12 @@ class StreamingFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         player = getSimpleExoplayer()
+        initListeners()
 
         playerView.player = player
         val mediaSource = getMediaSource()
         player?.prepare(mediaSource)
         player?.playWhenReady = playWhenReady
-        initListeners()
         player?.seekTo(currentWindow, playbackPosition)
         player?.prepare(mediaSource, true, false)
 
@@ -136,17 +136,12 @@ class StreamingFragment : Fragment() {
                 Toast.makeText(context,"bitrate estimate = "+bitrateEstimate,Toast.LENGTH_SHORT).show()
             }
 
-            override fun onNetworkTypeChanged(eventTime: AnalyticsListener.EventTime?, networkInfo: NetworkInfo?) {
-            }
 
             override fun onPlayerStateChanged(
                 eventTime: AnalyticsListener.EventTime?,
                 playWhenReady: Boolean,
                 playbackState: Int
             ) {
-            }
-
-            override fun onViewportSizeChange(eventTime: AnalyticsListener.EventTime?, width: Int, height: Int) {
             }
 
             override fun onDrmKeysRestored(eventTime: AnalyticsListener.EventTime?) {
@@ -356,9 +351,9 @@ class StreamingFragment : Fragment() {
 
         val adaptiveTrackSelection = AdaptiveTrackSelection.Factory(DefaultBandwidthMeter())
         return ExoPlayerFactory.newSimpleInstance(
+            context,
             DefaultRenderersFactory(context),
-            DefaultTrackSelector(adaptiveTrackSelection),
-            DefaultLoadControl()
+            DefaultTrackSelector(adaptiveTrackSelection)
         )
 
 
