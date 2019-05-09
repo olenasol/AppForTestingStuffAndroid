@@ -47,7 +47,7 @@ dependencies {
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'com.google.android.material:material:1.1.0-alpha03'
     //Constraint layout
-    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-alpha3'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta1'
     //RecyclerView
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     //Image loading
