@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.core.os.HandlerCompat.postDelayed
 import androidx.fragment.app.Fragment
 import com.testapp.appfortesting.R
-import kotlinx.android.synthetic.main.fragment_constraintstates.*
+import kotlinx.android.synthetic.main.cl_states_start.*
 
 class ConstraintStatesFragment : Fragment() {
 
@@ -37,6 +37,7 @@ class ConstraintStatesFragment : Fragment() {
         }, null, 3000L)
         postDelayed(handler, {
             mainConstrainLayout.setState(if (changed) R.id.start1 else R.id.end1, 0, 0)
+            btnStart.setText("End")
             changed = !changed
         }, null, 6000L)
 
