@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   android:orientation="vertical"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+    <ImageButton
+            android:id="@+id/imgBtn"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="start"
+            android:background="@color/buffered"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+    />
+    <com.testapp.appfortesting.screens.navview.CustomDrawerLayout
+            android:id="@+id/drawerLayout"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:clickable="false"
+            android:elevation="3dp"
+            android:focusable="false"
+            android:background="@android:color/transparent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imgBtn">
+
+        <com.google.android.material.navigation.NavigationView
+                android:id="@+id/navView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:overScrollMode="never"
+                android:clipToPadding="false"
+                android:layout_marginRight="-64dp"
+                android:background="@color/colorAccent"
+                android:paddingTop="64dp">
+                <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src = "@drawable/ic_launcher_background"
+                />
+
+        </com.google.android.material.navigation.NavigationView>
+    </com.testapp.appfortesting.screens.navview.CustomDrawerLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -26,7 +26,7 @@ class GraphqlFragment : Fragment() {
 
 
     companion object {
-        const val BASE_URL = "http://d427f8f3.ngrok.io/graphql"
+        const val BASE_URL = "http://1ce1dddb.ngrok.io/graphql"
 
         fun newInstance():GraphqlFragment{
             return GraphqlFragment()
