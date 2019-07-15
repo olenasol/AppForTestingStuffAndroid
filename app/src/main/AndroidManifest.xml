@@ -62,6 +62,9 @@
                     android:resource="@xml/simple_app_widget_info"/>
         </receiver>
 
+        <service android:name=".screens.record.PlayerForegroundService"/>
+        <provider android:authorities="com.testapp.appfortesting.AdressBook"
+                  android:name=".screens.content_provider.ContactsProvider"/>
     </application>
 
 </manifest>

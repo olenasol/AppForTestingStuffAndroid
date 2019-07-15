@@ -4,7 +4,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.facebook.drawee.backends.pipeline.Fresco
 import com.testapp.appfortesting.screens.constraintlayout.ConstraintStatesFragment
-import com.testapp.appfortesting.screens.exoplayer.playlist.PlaylistFragment
 import com.testapp.appfortesting.screens.exoplayer.streaming.StreamingFragment
 import com.testapp.appfortesting.screens.ipc.IPCMessangerFragment
 import com.testapp.appfortesting.screens.navview.NavigationFragment

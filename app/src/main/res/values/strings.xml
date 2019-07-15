@@ -26,4 +26,12 @@
         traditional dark-wood Austrian-era coffee house is where Lviv’s stratum of arabica is mined; you can visit
         colliers at the bean-face before heading back upstairs for a fragrant cuppa.
     </string>
+    <string name="insert">Insert</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete</string>
+    <string name="error">Error</string>
+    <string name="normal">Normal</string>
+    <string name="emboss">Emboss</string>
+    <string name="blur">Blur</string>
+    <string name="clear">Clear</string>
 </resources>
