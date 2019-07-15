@@ -65,6 +65,9 @@
         <service android:name=".screens.record.PlayerForegroundService"/>
         <provider android:authorities="com.testapp.appfortesting.AdressBook"
                   android:name=".screens.content_provider.ContactsProvider"/>
+        <service android:name=".screens.record.PlayerForegroundService"/>
+        <provider android:authorities="com.testapp.appfortesting.AdressBook"
+                  android:name=".screens.content_provider.ContactsProvider"/>
     </application>
 
 </manifest>
