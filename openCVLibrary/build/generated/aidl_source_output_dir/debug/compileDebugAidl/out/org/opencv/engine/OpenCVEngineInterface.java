@@ -1,6 +1,6 @@
 /*
  * This file is auto-generated.  DO NOT MODIFY.
- * Original file: C:\\Users\\Leobit User\\Documents\\AndroidStudioProjects\\AppForTestingStaff\\AppForTestingStuffAndroid\\openCVLibrary\\src\\main\\aidl\\org\\opencv\\engine\\OpenCVEngineInterface.aidl
+ * Original file: /Users/admin/Documents/androidProjects/AppForTestingStuffAndroid/openCVLibrary/src/main/aidl/org/opencv/engine/OpenCVEngineInterface.aidl
  */
 package org.opencv.engine;
 /**

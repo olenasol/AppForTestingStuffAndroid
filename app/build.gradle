@@ -65,6 +65,8 @@ dependencies {
     implementation "com.apollographql.apollo:apollo-android-support:0.3.2"
     //Ion
     implementation 'com.koushikdutta.ion:ion:2.1.6'
+    //Zxing
+    implementation 'com.github.kenglxn.QRGen:android:2.6.0'
     //testing
     implementation 'com.google.android.gms:play-services-maps:16.1.0'
     testImplementation 'junit:junit:4.12'
